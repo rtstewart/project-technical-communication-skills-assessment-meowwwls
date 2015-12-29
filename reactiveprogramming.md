@@ -45,7 +45,7 @@ So how can we make that happen outside of a spreadsheet program?  One way we can
     updateB();
     console.log(b); // 14
     
-Here we are declaring a variable `a` and assigning it an initial value of 10. We declare a variable `b` and just as in the initial example, we assign it the value of `a` plus 4. Now, we want to write a simple function that will always update the value of `b` so it reflects whatever the value of `a` is when the value of `a` is changed. I am using a named function function expression that takes the value of `a` **when the function is called**, adds it to 4, stores the value in a local variable we call `sum`, and updates the value of `b` to be that of `sum`. As you can expect, the value of `b` is still 14 after the function is called because the value of `a` has not yet changed. But what happens if we now change the value of `a` to 5?  
+Here we are declaring a variable `a` and assigning it an initial value of 10. We declare a variable `b` and just as in the initial example, we assign it the value of `a + 4`. Now, we want to write a simple function that will always update the value of `b` so it reflects whatever the value of `a` is when the value of `a` is changed. I am using a named function expression that takes the value of `a` **when the function is called**, adds it to 4, stores the value in a local variable we call `sum`, and updates the value of `b` to be that of `sum`. As you can expect, the value of `b` is still 14 after the function is called because the value of `a` has not yet changed. But what happens if we now change the value of `a` to 5?  
 
     a = 5;
     updateB();
